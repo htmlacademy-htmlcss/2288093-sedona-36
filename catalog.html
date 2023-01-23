@@ -71,21 +71,39 @@
           <h2 class="visually-hiden">Фильтры по гостиницам</h2>
           <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/"> <!--Форма с фильтрами-->
             <fieldset class="catalog-filter">
-              <legend class="catalog-filtername">Инфраструктура:</legend> <!--Фильтр по Инфраструктуре-->
-              <label>
+              <legend class="catalog-title">Инфраструктура:</legend> <!--Фильтр по Инфраструктуре-->
+              <ul class="catalog--filter-list">
+                <li class="catalog--filter-item"
+                <label>
                 Бассейн
-                <input class="catalog--filtername-infrastructure" type="checkbox" checked>
-              </label>
-              <label>
+                  <input class="catalog-filtername-infrastructure" type="checkbox" checked>
+                </label>
+                <label>
                 Парковка
-                <input class="catalog--filtername-infrastructure" type="checkbox" checked>
-              </label>
-              <label>
+                  <input class="catalog-filtername-infrastructure" type="checkbox" checked>
+                </label>
+                <label>
                 Wi-Fi
-                <input class="catalog--filtername-infrastructure" type="checkbox">
-              </label>
+                  <input class="catalog-filtername-infrastructure" type="checkbox">
+                </label>
+            </ul>
             </fieldset>
 
+            <fieldset class="catalog-filter">
+              <legend class="catalog-title">Тип жилья:</legend> <!--Фильтр по Типам жилья:-->
+              <label>
+                Гостиница
+                <input class="catalog-filtername-housetype" type="checkbox" checked>
+              </label>
+              <label>
+                Мотель
+                <input class="catalog-filtername-housetype" type="checkbox">
+              </label>
+              <label>
+                Апартаменты
+                <input class="catalog-filtername-housetype" type="checkbox">
+              </label>
+            </fieldset>
 
 
           </form>
