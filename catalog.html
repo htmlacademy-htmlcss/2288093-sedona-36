@@ -53,8 +53,41 @@
     </nav>
   </header> <!--Конец хэдера-->
 
-  <main>
+  <main class="main-inner">
+    <header class="inner-header"> <!--Иннер хэдер. Блок с фильтрами по гостиницам-->
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs"> <!--Хлебные крошки-->
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              Главная           <!--Потом нужно будет заменить "Главная" на значок с домиком из макета-->
+            </a>
+          </li>
+          <li class="breadcrumbs-link">
+            Гостиницы
+          </li>
+        </ul>
+        <section class="catalog-products">
+          <h2 class="visually-hiden">Фильтры по гостиницам</h2>
+          <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/">
+            <fieldset class="catalog-filter">
+              <legend class="catalog-filtername">Инфраструктура:</legend>
+              <label>
+                Бассейн
+                <input class="catalog--filtername-infrastructure" type="checkbox" checked>
+              </label>
+              <label>
+                Парковка
+                <input class="catalog--filtername-infrastructure" type="checkbox" checked>
+              </label>
+              <label>
+                Wi-Fi
+                <input class="catalog--filtername-infrastructure" type="checkbox">
+              </label>
+            </fieldset>
 
+          </form>
+        </section>
+    </header>
   </main>
 
   <footer class="page-footer"> <!--Футер-->
