@@ -72,40 +72,59 @@
           <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/"> <!--Форма с фильтрами-->
             <fieldset class="catalog-filter">
               <legend class="catalog-title">Инфраструктура:</legend> <!--Фильтр по Инфраструктуре-->
-              <ul class="catalog--filter-list">
-                <li class="catalog--filter-item"
-                <label>
+              <ul class="catalog-filter-list">
+
+                <li class="catalog-filter-item">
+                  <label>
                 Бассейн
-                  <input class="catalog-filtername-infrastructure" type="checkbox" checked>
-                </label>
-                <label>
+                    <input class="catalog-title-infrastructure" type="checkbox" name="swimming-pool" checked>
+                  </label>
+                </li>
+
+                <li class="catalog-filter-item">
+                  <label>
                 Парковка
-                  <input class="catalog-filtername-infrastructure" type="checkbox" checked>
-                </label>
+                    <input class="catalog-title-infrastructure" type="checkbox" name="parking-space" checked>
+                  </label>
+                </li>
+
+              <li class="catalog-filter-item">
                 <label>
                 Wi-Fi
-                  <input class="catalog-filtername-infrastructure" type="checkbox">
+                  <input class="catalog-title-infrastructure" type="checkbox" name="Wi-Fi">
                 </label>
+              </li>
             </ul>
             </fieldset>
 
             <fieldset class="catalog-filter">
-              <legend class="catalog-title">Тип жилья:</legend> <!--Фильтр по Типам жилья:-->
-              <label>
+              <legend class="catalog-title">Тип жилья::</legend> <!--Фильтр по Типу жилья-->
+              <ul class="catalog-filter-list">
+
+                <li class="catalog-filter-item">
+                  <label>
                 Гостиница
-                <input class="catalog-filtername-housetype" type="checkbox" checked>
-              </label>
-              <label>
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="hotel" checked>
+                  </label>
+                </li>
+
+                <li class="catalog-filter-item">
+                  <label>
                 Мотель
-                <input class="catalog-filtername-housetype" type="checkbox">
-              </label>
-              <label>
+                    <input class="catalog-filter-item-housetypes" type="radio" value="motel" name="house-types">
+                  </label>
+                </li>
+
+              <li class="catalog-filter-item">
+                <label>
                 Апартаменты
-                <input class="catalog-filtername-housetype" type="checkbox">
-              </label>
+                  <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="Apartments">
+                </label>
+              </li>
+            </ul>
             </fieldset>
 
-
+            <button type="submit">Применить</button>
           </form>
         </section>
     </header>
