@@ -130,16 +130,30 @@
         </section>
     </header>
 
-      <h3 class="catalog-results-title">Найдено гостиниц: 38</h3>
+      <section class="catalog-show-settings"> <!--Блок с настройками сортировки и отображения-->
+        <h3 class="catalog-results">Найдено гостиниц: 38</h3>
 
-      <select class="select-control" aria-label="Сортировка"> <!--Сортировка-->
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-        <option value="popular">Сначала популярные</iption>
-      </select>
 
-    <section class="catalog-results"> <!--Блок с найденными гостиницами-->
-    </section>
+        <select class="select-control" aria-label="Сортировка"> <!--Сортировка-->
+         <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</iption>
+        </select>
+
+        <ul class="catalog-view"> <!--Настройка вариантов вида отображения-->
+          <li>
+            <a class="catalog-view-option" href="#">Показать плитку</a>
+          </li>
+          <li>
+            <a class="catalog-view-option" href="#">Показать одну гостиницу</a>
+          </li>
+          <li>
+            <a class="catalog-view-option" href="#">Показать список</a>
+          </li>
+        </ul>
+
+      </section>
+
   </main>
 
   <footer class="page-footer"> <!--Футер-->
