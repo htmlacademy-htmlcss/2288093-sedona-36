@@ -54,7 +54,8 @@
   </header> <!--Конец хэдера-->
 
   <main class="main-inner">
-    <header class="inner-header"> <!--Иннер хэдер. Блок с фильтрами по гостиницам-->
+
+    <header class="inner-header"> <!--Хэдер каталога - блок с фильтрами по гостиницам-->
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs"> <!--Хлебные крошки-->
           <li class="breadcrumbs-item">
@@ -115,12 +116,12 @@
                   </label>
                 </li>
 
-              <li class="catalog-filter-item">
-                <label>
+                <li class="catalog-filter-item">
+                  <label>
                 Апартаменты
-                  <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="Apartments">
-                </label>
-              </li>
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="Apartments">
+                  </label>
+                </li>
             </ul>
             </fieldset>
 
@@ -130,9 +131,9 @@
         </section>
     </header>
 
+    <section class="catalog"> <!--Основная часть каталога-->
       <section class="catalog-show-settings"> <!--Блок с настройками сортировки и отображения-->
-        <h3 class="catalog-results">Найдено гостиниц: 38</h3>
-
+        <h3 class="catalog-results">Найдено гостиниц: 38</h3> <!--Заголовок с найденными гостиницами-->
 
         <select class="select-control" aria-label="Сортировка"> <!--Сортировка гостиниц-->
          <option value="cheap">Сначала дешевые</option>
@@ -159,12 +160,20 @@
         </ul>
       </section>
 
-      <section class="catalog-items">
-        <figure>
-          <img class="item-logo" src="" alt="Ночное звездное небо, виднеющееся из пещеры">
-          <figcaption class="item--name">Amara Resort & Spa</figcaption>
-        </figure>
-      </section>
+      <ul class="catalog-items"></ul> <!--Список найденных гостиниц-->
+        <li class="catalog-item"> <!--Карточка товара-->
+          <a class="catalog-item-image" href="">
+            <img class="item-image" src="" alt="Ночное звездное небо, виднеющееся из пещеры">
+          </a>
+          <h4 class="item--name">Amara Resort & Spa</h4>
+          <span class="item-housetype">Гостиница</span>
+          <span class="item-price">От 4000 ₽</span>
+          <a class="button detailed" href="">Подробнее</a>
+          <button class="button favourites" type="button">В избранное</button>
+        </li>
+      </ul>
+
+    </section>
   </main>
 
   <footer class="page-footer"> <!--Футер-->
