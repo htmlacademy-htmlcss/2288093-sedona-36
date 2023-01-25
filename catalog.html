@@ -72,37 +72,36 @@
         <section class="catalog-products"> <!--Блок с фильтрами-->
           <h2 class="visually-hiden">Поиск гостиниц по параметрам</h2>
           <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/"> <!--Форма с фильтрами-->
+
             <fieldset class="catalog-filter">
               <legend class="catalog-title">Инфраструктура:</legend> <!--Фильтр по Инфраструктуре-->
               <ul class="catalog-filter-list">
-
                 <li class="catalog-filter-item">
                   <label>
                 Бассейн
-                    <input class="catalog-title-infrastructure" type="checkbox" name="swimming-pool" checked>
+                    <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item"  value="swimming-pool" checked>
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label>
                 Парковка
-                    <input class="catalog-title-infrastructure" type="checkbox" name="parking-space" checked>
+                    <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item" value="parking-space" checked>
                   </label>
                 </li>
 
-              <li class="catalog-filter-item">
+                <li class="catalog-filter-item">
                 <label>
                 Wi-Fi
-                  <input class="catalog-title-infrastructure" type="checkbox" name="Wi-Fi">
+                  <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item" value="Wi-Fi">
                 </label>
-              </li>
-            </ul>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter">
               <legend class="catalog-title">Тип жилья::</legend> <!--Фильтр по Типу жилья-->
               <ul class="catalog-filter-list">
-
                 <li class="catalog-filter-item">
                   <label>
                 Гостиница
@@ -113,17 +112,17 @@
                 <li class="catalog-filter-item">
                   <label>
                 Мотель
-                    <input class="catalog-filter-item-housetypes" type="radio" value="motel" name="house-types">
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="motel">
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label>
                 Апартаменты
-                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="Apartments">
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="apartments">
                   </label>
                 </li>
-            </ul>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter"> <!--Фильтр по стоимости-->
