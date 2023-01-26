@@ -59,7 +59,7 @@
 
     <header class="inner-header"> <!--Хэдер каталога - блок с фильтрами по гостиницам-->
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs"> <!--Хлебные крошки-->
+        <ol class="breadcrumbs"> <!--Хлебные крошки-->
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
               Главная           <!--Потом нужно будет заменить "Главная" на значок с домиком из макета-->
@@ -68,42 +68,41 @@
           <li class="breadcrumbs-link">
             Гостиницы
           </li>
-        </ul>
+        </ol>
 
         <section class="catalog-products"> <!--Блок с фильтрами-->
           <h2 class="visually-hiden">Поиск гостиниц по параметрам</h2>
           <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/"> <!--Форма с фильтрами-->
+
             <fieldset class="catalog-filter">
               <legend class="catalog-title">Инфраструктура:</legend> <!--Фильтр по Инфраструктуре-->
               <ul class="catalog-filter-list">
-
                 <li class="catalog-filter-item">
                   <label>
                 Бассейн
-                    <input class="catalog-title-infrastructure" type="checkbox" name="swimming-pool" checked>
+                    <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item"  value="swimming-pool" checked>
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label>
                 Парковка
-                    <input class="catalog-title-infrastructure" type="checkbox" name="parking-space" checked>
+                    <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item" value="parking-space" checked>
                   </label>
                 </li>
 
-              <li class="catalog-filter-item">
+                <li class="catalog-filter-item">
                 <label>
                 Wi-Fi
-                  <input class="catalog-title-infrastructure" type="checkbox" name="Wi-Fi">
+                  <input class="catalog-filter-item-infrastructure" type="checkbox" name="infrastructure-item" value="Wi-Fi">
                 </label>
-              </li>
-            </ul>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter">
               <legend class="catalog-title">Тип жилья::</legend> <!--Фильтр по Типу жилья-->
               <ul class="catalog-filter-list">
-
                 <li class="catalog-filter-item">
                   <label>
                 Гостиница
@@ -114,17 +113,17 @@
                 <li class="catalog-filter-item">
                   <label>
                 Мотель
-                    <input class="catalog-filter-item-housetypes" type="radio" value="motel" name="house-types">
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="motel">
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label>
                 Апартаменты
-                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="Apartments">
+                    <input class="catalog-filter-item-housetypes" type="radio" name="house-types" value="apartments">
                   </label>
                 </li>
-            </ul>
+              </ul>
             </fieldset>
 
             <fieldset class="catalog-filter"> <!--Фильтр по стоимости-->
@@ -139,34 +138,34 @@
     </header>
 
     <section class="catalog"> <!--Основная часть каталога-->
-      <section class="catalog-show-settings"> <!--Блок с настройками сортировки и отображения-->
+      <div class="catalog-show-settings"> <!--Блок с настройками сортировки и отображения-->
         <h2 class="visually-hiden">Найденые гостиницы</h2> <!--Заголовок с найденными гостиницами-->
         <span class="catalog-results-number">Найдено гостиниц: 38</span>
 
         <select class="select-control" aria-label="Сортировка"> <!--Сортировка гостиниц-->
-         <option value="cheap">Сначала дешевые</option>
+          <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
 
-        <ul class="catalog-view"> <!--Настройка вариантов отображения. В проекте барбершоп данный блок выполнен как кнопки-->
+        <ul class="catalog-view-settings"> <!--Настройки вариантов отображения (вида) каталога-->
           <li>
-            <a class="catalog-view-option" href="#">
+            <a class="button view-variant" href="#">
               <span class="visially-hiden">Показать плитку</span>
             </a>
           </li>
           <li>
-            <a class="catalog-view-option" href="#">
+            <a class="button view-variant" href="#">
               <span class="visially-hiden">Показать один элемент</span>
             </a>
           </li>
           <li>
-            <a class="catalog-view-option" href="#">
+            <a class="button view-variant" href="#">
               <span class="visially-hiden">Показать список</span>
             </a>
           </li>
         </ul>
-      </section>
+      </div>
 
       <ul class="catalog-card"> <!--Список найденных гостиниц-->
         <li class="catalog-card"> <!--Карточка товара Amara Resort & Spa-->
@@ -183,10 +182,7 @@
             <button class="button-favourites" type="button">В избранное</button> <!--Допустимо ли добавлять кнопку вне формы?-->
           </p>
           <p class="catalog-card-rating"> <!--Рейтинг-->
-            <img class="stars" src="" alt="Звезда рейтинга 1">
-            <img class="stars" src="" alt="Звезда рейтинга 2">
-            <img class="stars" src="" alt="Звезда рейтинга 3">
-            <img class="stars" src="" alt="Звезда рейтинга 4">
+            <img class="stars" src="" alt="Звезда рейтинга">
             <span class="rating">Рейтинг: 8,5</span>
           </p>
         </li>
@@ -205,10 +201,7 @@
             <button class="button-favourites" type="button">В избранное</button> <!--Допустимо ли добавлять кнопку вне формы?-->
           </p>
           <p class="catalog-card-rating"> <!--Рейтинг-->
-            <img class="stars" src="" alt="Звезда рейтинга 1">
-            <img class="stars" src="" alt="Звезда рейтинга 2">
-            <img class="stars" src="" alt="Звезда рейтинга 3">
-            <img class="stars" src="" alt="Звезда рейтинга 4">
+            <img class="stars" src="" alt="Звезда рейтинга">
             <span class="rating">Рейтинг: 9,2</span>
           </p>
         </li>
@@ -227,9 +220,7 @@
             <button class="button-favourites" type="button">В избранное</button> <!--Допустимо ли добавлять кнопку вне формы?-->
           </p>
           <p class="catalog-card-rating"> <!--Рейтинг-->
-            <img class="stars" src="" alt="Звезда рейтинга 1">
-            <img class="stars" src="" alt="Звезда рейтинга 2">
-            <img class="stars" src="" alt="Звезда рейтинга 3">
+            <img class="stars" src="" alt="Звезда рейтинга">
             <span class="rating">Рейтинг: 6,9</span>
           </p>
         </li>
@@ -249,11 +240,9 @@
           </p>
           <p class="catalog-card-rating"> <!--Рейтинг-->
             <img class="stars" src="" alt="Звезда рейтинга 1">
-            <img class="stars" src="" alt="Звезда рейтинга 2">
             <span class="rating">Рейтинг: 5,0</span>
           </p>
         </li>
-
       </ul>
 
       <ul class="pagination"> <!--Пагинация-->
@@ -283,7 +272,8 @@
       <p>Только полезная информация и никакого спама,<br>
         честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"> <!--форма для указания Email-->
-        <input type="email" name="email" placeholder="Ваш e-mail">
+        <label class="visually-hidden" for="email">Ввести e-mail</label>
+        <input id="email" type="email" name="email" placeholder="Ваш e-mail">
         <button class="button" type="submit" value="Подписаться">Подписаться</button>
       </form>
     </footer>
