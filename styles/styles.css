@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 21px;
+    color: #242424;
+    background-color: #fbf7f4;
+}
+
+.page-header { /*Хэдер*/
+    color: #000000;
+    background-color: #FFFFFF;
+
+}
+
+.navigation-link {
+    color: inherit;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Хиро блок*/
+.hero {
+   background-image: url("../images/hero-background.jpg");
+   background-repeat: no-repeat;
+   background-color: #82B3D3;
+}
+
+/*Кнопка поиска*/
+.navigation-user li:nth-child(1) {
+    background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+}
+
+/*Избранное*/
+.navigation-user li:nth-child(2) {
+    background-image: url(../images/heart-icon.svg);
+    background-repeat: no-repeat;
+}
+
+/*Кнопка ХОЧУ СЮДА*/
+.navigation-user li:nth-child(3) {
+    color: #FFFFFF;
+    background-color: #756157;
+    padding: 8px 50px;
+    width: 160px;
+    height: 36px;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+*/
+
+
+/*Секция со списком преимуществ*/
+.advantages{
+    background-color: #FFFFFF;
+}
+
+/*Первый параграф*/
+.main-row {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Второй параграф*/
+.secondary-row {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Список приимуществ*/
+.advantages-list li:nth-child(1) {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+}
+
+.advantages-list li:nth-child(2) {
+    background-color: #83B3D3;
+   }
+
+.advantages-list li:nth-child(3) {
+    background-color: #82B3D3;
+   }
+
+.advantages-list li:nth-child(4) {
+    background-color: #83B3D3;
+    ;
+   }
+
+.advantages-list li:nth-child(5) {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+   }
+
+/*Заголовок в списке преимуществ*/
+.advantages-title,
+.service-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28x;
+}
+
+/*Секция с предложением приехать в Седону и сервисом*/
+.services {
+    background-color: #FFFFFF;
+}
+
+.service-list li:nth-last-child(1) {
+    background-color: #83B3D3;
+    ;
+}
