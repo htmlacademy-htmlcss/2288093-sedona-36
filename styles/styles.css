@@ -60,6 +60,10 @@ body {
    background-color: #82B3D3;
 }
 
+.welcome-image {
+text-align: center;
+}
+
 /*Кнопка поиска*/
 .navigation-user li:nth-child(1) {
     background-image: url(../images/search-icon.svg);
@@ -118,7 +122,8 @@ body {
 
 /*Список приимуществ*/
 .advantages-list li:nth-child(1) {
-    background-color: #82B3D3;
+    background-color: rgba(130, 179, 211, 1);
+
     color: #FFFFFF;
 }
 
@@ -136,7 +141,7 @@ body {
    }
 
 .advantages-list li:nth-child(5) {
-    background-color: #82B3D3;
+    background-color: rgba(130, 179, 211, 1);
     color: #FFFFFF;
    }
 
@@ -154,7 +159,30 @@ body {
     background-color: #FFFFFF;
 }
 
-.service-list li:nth-last-child(1) {
-    background-color: #83B3D3;
-    ;
+.service-list li:nth-last-child(1),
+.service-list li:nth-last-child(3) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-list-item-logo-house {
+    background-image: url("../images/service-house.svg");
+    width: 75px;
+    height: 72px;
+}
+
+.service-list-item-logo-food {
+    background-image: url("../images/service-food.svg");
+    width: 74px;
+    height: 70px;
+}
+
+.service-list-item-logo-gift {
+    background-image: url("../images/service-gift.svg");
+    width: 64px;
+    height: 76px;
+}
+
+.hotel-search button {
+    background-color: #756157;
+    text-align: center;
 }
