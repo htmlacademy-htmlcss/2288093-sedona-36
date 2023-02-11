@@ -45,6 +45,14 @@ body {
 
 }
 
+/*Убирает буллиты у обоих списков в хэдере. Почему то пропадает икоока Поиска(лупы) и Избранного(если убрать span с числом 12)
+
+.navigation-item {
+    list-style-type: none;
+}
+*/
+
+
 /*Ссылки в навигации хэдера*/
 .navigation-link {
     color: #000000;
@@ -210,6 +218,7 @@ body {
 
 /*Кнопки. Общие стили.*/
 .button {
+    font-family: "PT Sans";
     color:#FFFFFF;
     font-weight: 700;
     text-align: center;
@@ -217,6 +226,7 @@ body {
     border: none;
     border-radius: 4px;
 }
+
 
 /*Кнопка ХОЧУ СЮДА*/
 .want-here {
@@ -237,6 +247,26 @@ body {
     line-height: 36px;
 
     padding: 8px 50px;
+}
+
+
+/*Кнопки ПРИМЕНИТЬ и СБРОСИТЬ в форме фильтров по каталогу*/
+.catalog-filters button {
+    background-color: #82B3D3;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    padding: 8px 50px;
+
+    /*Нужно ли задавать width и height для кнопок?*/
+    width: 191px;
+    height: 36px;
+}
+
+/*Делает прозрачный фон кнопке СБРОСИТЬ*/
+.button[type="reset"] {
+    background-color: transparent;
 }
 
 
@@ -267,7 +297,6 @@ body {
 
 /*Кнопка "Подписаться*/
 .newsletter button {
-    font-family: "PT Sans";
     font-size: 20px;
     line-height: 36px;
 
@@ -309,7 +338,7 @@ body {
     font-size: 40px;
     line-height: 40px;
     color: #000000;
-
+    text-decoration: none;
 }
 
 .inner-header {
@@ -317,9 +346,9 @@ body {
 
     background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
-    background-color: #82B3D3;
+    background-color: rgba(131, 179, 211, 0.2);
     width: 1200px;
-    height: 412px;
+    /*height: 412px; временно скрываю высоту, т.к. получается слишком низко, ограничиваем секцию*/
 }
 
 /*Хлебные крошки на странице каталога*/
@@ -337,3 +366,8 @@ body {
 {
 
 }*/
+
+/*Параметры фильтров (их наименования-fieldset'ы)*/
+.catalog-title {
+ font-weight: 700;
+}
