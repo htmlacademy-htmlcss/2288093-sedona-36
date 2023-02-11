@@ -93,14 +93,10 @@ body {
 
 /*Кнопка ХОЧУ СЮДА*/
 .navigation-user li:nth-child(3) {
-    color: #FFFFFF;
     background-color: #756157;
     padding: 8px 50px;
     width: 160px;
     height: 36px;
-    border-radius: 4px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -206,17 +202,23 @@ body {
     background-color: #FFFFFF;
 }
 
-/*Кнопка поиска отеля*/
-.hotel-search button {
+
+/*Кнопка. Общие стили.*/
+.button {
     color:#FFFFFF;
-    background-color: #756157;
-
-
     font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/*Кнопка поиска отеля*/
+.hotel-search button {
+    background-color: #756157;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 /*Блок для подписки на рассылку*/
@@ -238,6 +240,12 @@ body {
 
 }
 
+
+
+
+
+
+
 /*Кнопка "Подписаться*/
 .newsletter button {
     background-color: #82B3D3;
@@ -246,7 +254,9 @@ body {
     height: 52px;
     text-transform: uppercase;
     font-family: "PT Sans";
-    border-radius: 0px 4px 4px 0px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0 4px 4px 0;
 }
 
 /*Футер*/
@@ -262,14 +272,14 @@ body {
     height: 14px;
 }
 
-/*Первый элемент в списке соц сетей. Телеграм*/
+/*Второй элемент в списке соц сетей. Телеграм*/
 .footer-social-list li:nth-child(2){
     background-image: url("../images/telergram-icon.svg");
     width: 18px;
     height: 15px;
 }
 
-/*Первый элемент в списке соц сетей. Ютуб*/
+/*Третий элемент в списке соц сетей. Ютуб*/
 .footer-social-list li:nth-child(3){
     background-image: url("../images/youtube-icon.svg");
     width: 22px;
