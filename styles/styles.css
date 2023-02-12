@@ -313,7 +313,8 @@ body {
 }
 
 /*Кнопка "Подписаться*/
-.newsletter button {
+.newsletter button,
+.newsletter-form button {
     font-size: 20px;
     line-height: 36px;
 
@@ -428,4 +429,8 @@ body {
 .pagination .pagination-item:first-child {
     color: #000000;
     background-color: #F2F2F2;
+}
+
+.inner-footer {
+    background-color: white;
 }
