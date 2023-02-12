@@ -451,7 +451,7 @@ body {
 .inner-footer {
     background-color: white;
     width: 1200px;
-    height: 414.86px;
+    height: 415px;
 }
 
 /*Хлебные крошки. Первая ссылка на Главную страницу*/
@@ -468,9 +468,43 @@ body {
     line-height: 21px;
 }
 
+/*Сортировка гостиниц */
 .select-control {
     font-family: "PT Sans";
     color:#333333;
     font-size: 18px;
     line-height: 21px;
+}
+
+/*Настройки Вариантов отображения (вида) карточек*/
+.view-variant {
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 14px 12px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+/*Показать плитку*/
+.medium-icons {
+    background-image: url("../images/view-variant-medium-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Показать один элемент*/
+.large-icons{
+    background-image: url("../images/view-variant-large-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Показать список*/
+.list-icons {
+    background-image: url("../images/view-variant-list-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Текущий выбранный вид карточек*/
+.selected-view {
+    border: 2px solid #000000;
 }
