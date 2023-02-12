@@ -10,10 +10,12 @@
 <!--Хэдер-->
 <header class="page-header">
     <a class="navigation-logo" href="index.html">
-      <img src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона."> <!--Лого City of Sedona-->
+      <!--Лого City of Sedona-->
+      <img src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона.">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list"> <!--Навигация в хэдере слева-->
+         <!--Навигация в хэдере слева-->
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
             Главная
@@ -31,7 +33,8 @@
             </li>
         </ul>
 
-        <ul class="navigation-user"> <!--Навигация в хэдере справа-->
+        <!--Навигация в хэдере справа-->
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -56,25 +59,32 @@
           </li>
         </ul>
     </nav>
-  </header> <!--Конец хэдера-->
+  </header>
 
   <main class="main-inner">
 
-    <header class="inner-header"> <!--Хэдер каталога - блок с фильтрами по гостиницам-->
+    <!--Хэдер каталога (блок с фильтрами по гостиницам)-->
+    <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs"> <!--Хлебные крошки-->
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              Главная           <!--Потом нужно будет заменить "Главная" на значок с домиком из макета-->
+
+        <!--Хлебные крошки-->
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-list-main-page">
+            <a class="breadcrumbs-link-main-page" href="index.html">
+              <span class="visually-hidden">
+              Главная
+              </span>
             </a>
           </li>
-          <li class="breadcrumbs-link">
+          <li class="breadcrumbs-list">
+            <a class="breadcrumbs-link-catalog" href="#">
             Гостиницы
-          </li>
+            </a>
+        </li>
         </ol>
 
         <section class="catalog-products"> <!--Блок с фильтрами-->
-          <h2 class="visually-hiden">Поиск гостиниц по параметрам</h2>
+          <h2 class="visually-hidden">Поиск гостиниц по параметрам</h2>
           <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru/"> <!--Форма с фильтрами-->
 
             <fieldset class="catalog-filter">
@@ -214,7 +224,16 @@
             <button class="button add-to-favourites in-favourites" type="button">В избранном</button> <!--Допустимо ли добавлять кнопку вне формы?-->
           </p>
           <p class="catalog-card-rating"> <!--Рейтинг-->
-
+            <ul class="rating-stars"> <!--Звёзды рейтинга-->
+              <li class="rating-star">
+              </li>
+              <li class="rating-star">
+              </li>
+              <li class="rating-star">
+              </li>
+              <li class="rating-star">
+              </li>
+            </ul>
 
             <span class="rating">Рейтинг: 9,2</span>
           </p>
@@ -295,7 +314,8 @@
       </ol>
     </section>
 
-    <footer class="inner-footer"> <!--Футер основной части main-->
+     <!--Футер основной части main-->
+    <footer class="inner-footer">
       <h2 class="main-row">Подпишитесь на рассылку</h2> <!--Блок для подписки на рассылку-->
       <p class="secondary-row">Только полезная информация и никакого спама,
         честное бойскаутское!</p>

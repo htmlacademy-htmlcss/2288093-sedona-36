@@ -330,7 +330,7 @@ body {
     background-color: #FFFFFF;
 }
 
-/*Первый элемент в списке соц сетей. ВК*/
+/*Первый элемент в списке соц сетей. ВКонтакте*/
 .footer-social-list li:nth-child(1){
     background-image: url("../images/vk-icon.svg");
     width: 24px;
@@ -431,6 +431,23 @@ body {
     background-color: #F2F2F2;
 }
 
+/*Футер основной части main*/
 .inner-footer {
     background-color: white;
+    width: 1200px;
+    height: 414.86px;
+}
+
+/*Хлебные крошки. Первая ссылка на Главную страницу*/
+.breadcrumbs-list-main-page {
+    background-image: url("../images/main-page-icon.svg");
+    background-repeat: no-repeat;
+}
+
+/*Хлебные крошки. Вторая ссылка на Каталогу*/
+.breadcrumbs-link-catalog {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
 }
