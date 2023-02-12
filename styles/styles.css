@@ -61,9 +61,8 @@ body {
     line-height: 24px;
     font-weight: 700;
     text-transform: capitalize;
-    text-decoration: none;
     text-align: center;
-
+    text-decoration: none;
 }
 
 /*Хиро блок*/
@@ -172,7 +171,8 @@ body {
 
 /*Заголовок в списке преимуществ*/
 .advantages-title,
-.service-title{
+.service-title,
+.card-name {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
@@ -215,7 +215,6 @@ body {
     background-color: #FFFFFF;
 }
 
-
 /*Кнопки. Общие стили.*/
 .button {
     font-family: "PT Sans";
@@ -225,8 +224,8 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 4px;
+    padding: 8px 50px;
 }
-
 
 /*Кнопка ХОЧУ СЮДА*/
 .want-here {
@@ -235,9 +234,7 @@ body {
     font-size: 16px;
     line-height: 20px;
 
-    padding: 8px 50px;
 }
-
 
 /*Кнопка поиска отеля*/
 .hotel-search button {
@@ -245,10 +242,7 @@ body {
 
     font-size: 20px;
     line-height: 36px;
-
-    padding: 8px 50px;
 }
-
 
 /*Кнопки ПРИМЕНИТЬ и СБРОСИТЬ в форме фильтров по каталогу*/
 .catalog-filters button {
@@ -256,8 +250,6 @@ body {
 
     font-size: 16px;
     line-height: 20px;
-
-    padding: 8px 50px;
 
     /*Нужно ли задавать width и height для кнопок?*/
     width: 191px;
@@ -267,6 +259,23 @@ body {
 /*Делает прозрачный фон кнопке СБРОСИТЬ*/
 .button[type="reset"] {
     background-color: transparent;
+}
+
+/*Кнопки ПОДРОБНЕЕ в карточках каталога*/
+.detailed {
+    background-color: #756157;
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*Кнопки В ИЗБРАННОЕ в карточках каталога*/
+.add-to-favourites {
+    background-color: #82B3D3;
+
+    font-size: 16px;
+    line-height: 20px;
 }
 
 
@@ -346,7 +355,7 @@ body {
 
     background-image: url("../images/catalog-background.jpg");
     background-repeat: no-repeat;
-    background-color: rgba(131, 179, 211, 0.2);
+    background-color: #A5B3C0;
     width: 1200px;
     /*height: 412px; временно скрываю высоту, т.к. получается слишком низко, ограничиваем секцию*/
 }
@@ -362,10 +371,10 @@ body {
     color: #000000;
 }
 
-/*О.servise-description
-{
-
-}*/
+.servise-description,
+.catalog-card-info {
+   color:#333333;
+}
 
 /*Параметры фильтров (их наименования-fieldset'ы)*/
 .catalog-title {
