@@ -421,15 +421,31 @@ body {
     margin: 8px;
 }
 
+/*Ссылки в пагинации*/
 .pagination-link{
     color: #FFFFFF;
     text-decoration: none;
+    padding: 12px 24px;
 }
 
-.pagination .pagination-item:first-child {
-    color: #000000;
+/*Меняет фон первого элемента в пагинации*/
+.pagination-item:first-child {
     background-color: #F2F2F2;
 }
+
+/*Меняет цвет первого элемента в пагинации*/
+.pagination-item:first-child a {
+    color: #000000;
+}
+
+/*Кнопка многоточия в пагинации*/
+.pagination-item span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 12px 24px;
+}
+
 
 /*Футер основной части main*/
 .inner-footer {
@@ -449,5 +465,12 @@ body {
     color:#FFFFFF;
     text-decoration: none;
     font-size: 16px;
+    line-height: 21px;
+}
+
+.select-control {
+    font-family: "PT Sans";
+    color:#333333;
+    font-size: 18px;
     line-height: 21px;
 }
