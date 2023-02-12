@@ -1,0 +1,510 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 21px;
+    color: #242424;
+    background-color: #F2F2F2;
+}
+
+/*Хэдер*/
+.page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+
+}
+
+/*Убирает буллиты у обоих списков в хэдере. Почему то пропадает икоока Поиска(лупы) и Избранного(если убрать span с числом 12)
+
+.navigation-item {
+    list-style-type: none;
+}
+*/
+
+
+/*Ссылки в навигации хэдера*/
+.navigation-link {
+    color: #000000;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Хиро блок*/
+.hero {
+   background-image: url("../images/hero-background.jpg");
+   width: 1200px;
+   height: 485px;
+   background-repeat: no-repeat;
+   background-color: rgba(131, 179, 211, 0.12);
+}
+
+/*Белое векторное изоражение внизу блока*/
+.hero-background-bottom {
+    background-image: url("../images/hero-background-bottom.svg");
+    width: 1200px;
+    height: 57px;
+}
+
+/*Векторное изображение Welcome to Sedona*/
+.welcome-image {
+    text-align: center;
+}
+
+/*Кнопка поиска*/
+.navigation-user li:nth-child(1) {
+    background-image: url("../images/search-icon.svg");
+    background-repeat: no-repeat;
+}
+
+/*Избранное*/
+.navigation-user li:nth-child(2) {
+    background-image: url("../images/heart-icon.svg");
+    background-repeat: no-repeat;
+}
+
+/*Всего в избранном (число на зеленом фоне)*/
+.favourites-number {
+    background-color: #7DB54F;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+
+/*Секция со списком преимуществ*/
+.advantages{
+    background-color: #FFFFFF;
+}
+
+/*Первый параграф*/
+.main-row {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Второй параграф*/
+.secondary-row {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*Список преимуществ*/
+.advantages-item {
+    background-color: rgba(130, 179, 211, 1);
+    color: #ffffff;
+
+    /*width: 4000px;
+    height: 385px;*/
+}
+
+.advantages-item-square,
+.advantages-item-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2);
+    color: #000000;
+}
+
+
+/*Заголовок в списке преимуществ*/
+.advantages-title,
+.service-title,
+.card-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/*Секция с предложением приехать в Седону и сервисом*/
+.services {
+    background-color: #FFFFFF;
+}
+
+.service-list li:nth-last-child(1),
+.service-list li:nth-last-child(3) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+/*Иконка дома*/
+.service-list-item-logo-house {
+    background-image: url("../images/service-house.svg");
+    width: 75px;
+    height: 72px;
+}
+
+/*Иконка еды*/
+.service-list-item-logo-food {
+    background-image: url("../images/service-food.svg");
+    width: 74px;
+    height: 70px;
+}
+
+/*Иконка подарка*/
+.service-list-item-logo-gift {
+    background-image: url("../images/service-gift.svg");
+    width: 64px;
+    height: 76px;
+}
+
+/*Блок для поиска гостиницы*/
+.hotel-search {
+    background-color: #FFFFFF;
+}
+
+/*Кнопки. Общие стили.*/
+.button {
+    font-family: "PT Sans";
+    color:#FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 50px;
+}
+
+/*Кнопка ХОЧУ СЮДА*/
+.want-here {
+    background-color: #756157;
+
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+/*Кнопка поиска отеля*/
+.hotel-search button {
+    background-color: #756157;
+
+    font-size: 20px;
+    line-height: 36px;
+}
+
+/*Кнопки ПРИМЕНИТЬ и СБРОСИТЬ в форме фильтров по каталогу*/
+.catalog-filters button {
+    background-color: #82B3D3;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    /*Нужно ли задавать width и height для кнопок?*/
+    width: 191px;
+    height: 36px;
+}
+
+/*Делает прозрачный фон кнопке СБРОСИТЬ*/
+.button[type="reset"] {
+    background-color: transparent;
+}
+
+/*Кнопки ПОДРОБНЕЕ в карточках каталога*/
+.detailed {
+    background-color: #756157;
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*Кнопки В ИЗБРАННОЕ в карточках каталога*/
+.add-to-favourites {
+    background-color: #82B3D3;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*Кнопки В ИЗБРАННОМ в карточках каталога*/
+.in-favourites {
+    background-color: #7DB54F;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/*Блок для подписки на рассылку*/
+.newsletter {
+    background-image: url("../images/newsletter-background.jpg");
+    background-color: rgba(130, 179, 211, 1);
+    width: 1200px;
+    height: 358px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+/*input для ввода емейла*/
+.user-email {
+    font-family: "PT Sans";
+    color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px 0 0 4px;
+
+    width: 452px;
+    height: 52px;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*Кнопка "Подписаться*/
+.newsletter button,
+.newsletter-form button {
+    font-size: 20px;
+    line-height: 36px;
+
+    background-color: #82B3D3;
+    width: 232px;
+    height: 52px;
+    border-radius: 0 4px 4px 0;
+}
+
+/*Футер*/
+.page-footer {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/*Первый элемент в списке соц сетей. ВКонтакте*/
+.footer-social-list li:nth-child(1){
+    background-image: url("../images/vk-icon.svg");
+    width: 24px;
+    height: 14px;
+}
+
+/*Второй элемент в списке соц сетей. Телеграм*/
+.footer-social-list li:nth-child(2){
+    background-image: url("../images/telergram-icon.svg");
+    width: 18px;
+    height: 15px;
+}
+
+/*Третий элемент в списке соц сетей. Ютуб*/
+.footer-social-list li:nth-child(3){
+    background-image: url("../images/youtube-icon.svg");
+    width: 22px;
+    height: 17px;
+}
+
+/*Телефон*/
+.contact-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.inner-header {
+    color: #FFFFFF;
+
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
+    background-color: #A5B3C0;
+    width: 1200px;
+    /*height: 412px; временно скрываю высоту, т.к. получается слишком низко, ограничиваем секцию*/
+}
+
+/*Хлебные крошки на странице каталога*/
+.breadcrumbs-link {
+    color: #FFFFFF;
+}
+
+/*Основная часть каталога*/
+.catalog {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.servise-description,
+.catalog-card-info {
+   color:#333333;
+}
+
+/*Параметры фильтров (их наименования-fieldset'ы)*/
+.catalog-title {
+ font-weight: 700;
+}
+
+/*Кнопка с числом рейтинга*/
+.rating {
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 22px;
+}
+
+/*Звезда рейтинга*/
+.rating-star {
+    background-image: url("../images/rating-star.svg");
+    background-repeat: no-repeat;
+}
+
+.pagination-item {
+    background-color: #82B3D3;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+/*Ссылки в пагинации*/
+.pagination-link{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
+/*Меняет фон первого элемента в пагинации*/
+.pagination-item:first-child {
+    background-color: #F2F2F2;
+}
+
+/*Меняет цвет первого элемента в пагинации*/
+.pagination-item:first-child a {
+    color: #000000;
+}
+
+/*Кнопка многоточия в пагинации*/
+.pagination-item span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 12px 24px;
+}
+
+
+/*Футер основной части main*/
+.inner-footer {
+    background-color: white;
+    width: 1200px;
+    height: 415px;
+}
+
+/*Хлебные крошки. Первая ссылка на Главную страницу*/
+.breadcrumbs-list-main-page {
+    background-image: url("../images/main-page-icon.svg");
+    background-repeat: no-repeat;
+}
+
+/*Хлебные крошки. Вторая ссылка на Каталогу*/
+.breadcrumbs-link-catalog {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/*Сортировка гостиниц */
+.select-control {
+    font-family: "PT Sans";
+    color:#333333;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*Настройки Вариантов отображения (вида) карточек*/
+.view-variant {
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 14px 12px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+/*Показать плитку*/
+.medium-icons {
+    background-image: url("../images/view-variant-medium-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Показать один элемент*/
+.large-icons{
+    background-image: url("../images/view-variant-large-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Показать список*/
+.list-icons {
+    background-image: url("../images/view-variant-list-icons.svg");
+    background-repeat: no-repeat;
+}
+
+/*Текущий выбранный вид карточек*/
+.selected-view {
+    border: 2px solid #000000;
+}
